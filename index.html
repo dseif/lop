@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--
+      Change "Storytelling for urban change" below to change the title at the top of the page.
+      This is the one that will show up at the very top of your browser.
+    -->
+    <title>Storytelling for urban change</title>
+    <script src="http://cdn.popcornjs.org/code/dist/popcorn-complete.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="lop.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div class="logo" id="logo">
+          <span>Land of Opportunity</span>
+        </div>
+        <!--
+          Change this to change the black text below the "Land of Opportunity" text near the top of the page ("Storytelling for urban change").
+        -->
+        <span>Storytelling for urban change</span>
+      </div>
+      <div id="navbar">
+        <div id="buttons"><p><span>View Testimonials by:</span></p><br /><br />
+          <div class="nav_btn"><a href="#">Place</a>
+            <ul>
+              <!--
+                Change the words below to change the "Place" tags.
+              -->
+              <li><span class="search-field">New Orleans</spen></li>
+              <li><span class="search-field">Boston</span></li>
+              <li><span class="search-field">Chicago</span</li>
+              <li><span class="search-field">Atlanta, GA</span></li>
+            </ul>
+          </div>
+
+          <div class="nav_btn"><a href="#">Issue</a>
+            <ul>
+              <!--
+                Change the words below to change the "Issue" tags.
+              -->
+              <li><span class="search-field">Affordable Housing</span></li>
+              <li><span class="search-field">Food Security</span></li>
+              <li><span class="search-field">Disaster Recovery</span></li>
+              <li><span class="search-field">Immigration</span></li>
+              <li><span class="search-field">Urban Planning</span></li>
+            </ul>
+          </div>
+
+          <div class="nav_btn">
+            <a href="#">Campaign</a>
+            <ul>
+              <!--
+                Change the words below to change the "Campaign" tags.
+              -->
+              <li><span class="search-field">School Reform</span></li>
+              <li><span class="search-field">Public Safety</span></li>
+              <li><span class="search-field">Public Housing</span></li>
+            </ul>
+          </div>
+          <div class="show-all nav_btn">
+            <span id="show-all">All</span>
+          </div>
+          <div id="search">
+            <div>
+              <p>
+                <span>Search:</span>
+              </p>
+              <br  />
+              <input id="lop_search" name="search" type="text" size="32" />
+              <p>
+              <button id="lop_submit">Submit</button>
+              </p>
+            </div>
+          </div>
+        </div><!--CLOSE SEARCH-->
+      </div><!--CLOSE BUTTONS-->
+    </div> <!--CLOSE NAVBAR-->
+
+      <div id="content">
+        <div id="content_col_left">
+          <div id="data_panel_container">
+            <div id="data_panel_trigger">
+              <li>
+              <a href="#">
+                <span id="arrow_container"></span>
+                <span>Open Data Panel</span>
+              </a>
+              <ul>
+                <li>
+                  <div id="pie-graph"></div>
+                  <div id="bar-graph"></div>
+                  <div id="line-graph" class="hide"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div id="main_vid">
+            </div>
+
+            <div id="transcript">
+            </div>
+          </div>
+        </div><!--CLOSE CONTENT_COL_LEFT-->
+        <div id="content_col_right">
+        </div><!--CLOSE CONTENT_COL_RIGHT-->
+      </div><!--CLOSE CONTENT-->
+    </div>
+    <script
+      type="text/javascript"
+      src="http://gdata.youtube.com/feeds/api/videos?q=Tactical Storytelling&alt=json&format=5&author=LandofOpp&v=2.1&callback=videoCallback">
+    </script>
+  </body>
+</html>

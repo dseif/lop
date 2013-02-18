@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*reset codes*/
+
+@font-face {
+  font-family: glecb;
+  src: url("GLECB.TTF");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: glecb;
+	vertical-align: baseline;
+	
+}
+
+strong{
+	font-weight: bold;	
+}
+
+a{
+
+color: #003329;
+	
+}
+
+/* remember to define focus styles! */
+body{
+	width: 100%;	
+  background-color: #8B8378;
+}
+
+#container{
+	width: 1280px;
+	margin: 10px auto 0 auto;
+	postion: relative;
+}
+
+#header{
+	width: 960px;
+	height: 120px;
+	margin: 0 auto;
+}
+
+
+#logo{
+	width: 300px;
+	height: 50px;
+	background: url(http://www.landofopportunitymovie.com/_ui/images/logo.png) no-repeat;
+	position: relative;
+	display: block;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+#header #logo span{
+	margin-left: -9000px;	
+}
+
+#header span{
+	margin: 30px 0 0 10px;	
+	display: block;
+	text-transform: uppercase;
+}
+
+#navbar{
+	width: 960px;
+	height: 100px;
+	background-color: #000;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	
+}
+
+#navbar p span{
+	
+	color: #f7b626;
+	text-transform: uppercase;
+}
+
+#buttons{
+	margin: 20px 0 0 10px;
+	width: 70%;
+	height: 40px;
+	
+}
+
+nav_btn a:link{
+	color: #fff;	
+}
+
+.nav_btn{
+	width: 200px;
+	height: 30px;
+	margin: 0 1px;
+	padding-top: 5px;
+	background-color: #666;
+	display: block;
+	position: relative;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	float:left;
+}
+
+.show-all {
+  width: 50px;
+}
+
+.nav_btn:hover{
+width: 200px;
+	height: 30px;
+	margin: 0 1px;
+	background-color: #666;
+	display: block;
+	position: relative;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	float:left;
+	
+	
+}
+
+.show-all:hover {
+  width: 50px;
+	height: 30px;
+	margin: 0 1px;
+	background-color: #666;
+	display: block;
+	position: relative;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	
+}
+
+.nav_btn:focus{
+	width: 150px;
+	height: 30px;
+	float: left;
+	margin-left: 5px;
+	text-align:center;
+	padding-top: 13px;
+	background: url(../images/btn_sprite.jpg) 0 0 no-repeat;
+	color: #fff;
+}
+
+/*--- DROPDOWN ---*/
+.nav_btn ul{
+	background:#999; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,9); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+.nav_btn li{
+	padding:5px 0; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+}
+.nav_btn a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+	color: #fff;
+	text-decoration: none;
+}
+.nav_btn:hover ul{ /* Display the dropdown on hover */
+	position: relative;
+	left:0px; /* Bring back on-screen when needed */
+	top:7px;
+	text-align: left;
+	text-indent: 10px;
+	z-index: 7;
+	width: auto;
+	background-color: #999;
+	font-size: 70%;
+}
+.nav_btn:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background: none;
+	
+}
+.nav_btn:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration: none;
+	
+}
+.nav_btn:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	color: #fff;
+	text-decoration: underline;
+}
+
+
+
+
+
+#search{
+float: right;	
+margin: -50px -250px 0 0;
+
+}
+
+.search-field:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#content{
+	width: 960px;
+	height: 800px;
+	margin: 5px auto 0 auto;
+
+}
+
+#content_col_left{
+	width: 665px;
+	height: 800px;
+	float: left;
+		
+}
+
+#data_arrow{
+	width: 200px;
+	height: 29px;
+	padding: 25px 0 0 50px;
+	margin: 20px 0 0 10px;	
+	background: url(images/arrow_closed.png) 0 24px no-repeat;
+	color: #fff;
+}
+
+#data_arrow:hover{
+	width: 200px;
+	height: 29px;
+	padding: 25px 0 0 50px;
+	margin: 20px 0 0 10px;	
+	background: url(images/arrow_open.png) 0 28px no-repeat;
+	color: #fff;
+}
+
+#data_panel_container{
+	width: 665px;
+	height: auto;
+	background: url(images/datatrigger.jpg) 0 0  no-repeat;
+}
+
+
+#data_panel_trigger{
+	width: 100%;
+	min-height: 76px;
+	height: auto;
+	list-style: none;
+		
+	
+}
+
+#arrow_container {
+	background: #063529 url(images/datatrigger.jpg) 0 0 no-repeat;
+  -moz-transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+}
+
+/*-----------------*/
+
+#data_panel_trigger ul{
+	background: #063529 url(images/datatrigger_open.jpg) 0 0  no-repeat; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+		background:#999; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,9); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+
+#data_panel_trigger span{
+	
+	margin-left: 40px;
+	font-size: 125%;
+	line-height: 3.2em;
+
+	}
+
+#data_panel_trigger li{
+	padding:5px 0; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+}
+#data_panel_trigger a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+	color: #fff;
+	text-decoration: none;
+}
+/*#data_panel_trigger:hover ul{ /* Display the dropdown on hover */
+	position: relative;
+	left:0px; /* Bring back on-screen when needed */
+	top:52px;
+	text-align: left;
+	text-indent: 10px;
+	z-index: 7;
+	width: auto;
+	background-color: #ccc;
+	font-size: 70%;
+}*/
+
+.asdfasdf {
+	position: relative;
+	left:0px; /* Bring back on-screen when needed */
+	top:52px;
+	text-align: left;
+	text-indent: 10px;
+	z-index: 7;
+	width: auto;
+	background-color: #ccc;
+	font-size: 70%;
+}
+/*-----------------*/
+
+#content_col_right{
+	width: 290px;
+	height: 606px;
+	overflow-y: scroll;
+	float: right;
+	background-color: #fff;
+		
+}
+
+.thumbnail{
+	width: 100%;	
+	height: 105px;
+	margin: 10px 0;
+}
+
+.thumb_vid{
+	width: 50%;
+	height: 100px;
+	background-color: #000;	
+	margin: 3px;
+	float: left;
+}
+
+.thumb_desc{
+	width: 45%;
+	float: right;
+	background-color: #fff;
+	line-height: 1.2em;
+}
+
+.thumb_desc{
+	font-size: 75%;
+
+}
+
+.thumb_desc span{
+	font-style: italic;
+
+
+}
+
+.current_vid {
+  box-shadow: 0 0 15px rgba(0, 0, 255, 1);
+}
+
+#main_vid{
+	
+	Width: 640px;
+	height: 480px;
+	position: relative;
+	margin: 0 auto;
+}
+	
+#transcript{
+	
+	width: 640px;
+	height: 50px;
+	background-color: #ccc;
+	font-size: 20px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="http://cdn.popcornjs.org/code/dist/popcorn-complete.js"></script>
+    <script src="external/raphael-min.js"></script>
+    <script src="external/g.raphael-min.js"></script>
+    <script src="external/g.pie-min.js"></script>
+    <script src="lop.js">
+    </script>
+    <style>
+      .yt-container {
+        width: 500px;
+        height: 400px;
+        display: "inline-block";
+      }
+      .hide {
+        display: none;
+      }
+      #graph {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: 600px;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="authenticate">Authenticate</button>
+    <div id="videos"></div>
+    <div id="graph"></div>
+    <div id="tags"></div>
+    <script
+      type="text/javascript"
+      src="http://gdata.youtube.com/feeds/api/videos?alt=json&q=tactical storytelling&format=5&author=LandofOpp&callback=videoCallback">
+    </script>
+  </body>
+</html>
